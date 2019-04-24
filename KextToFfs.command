@@ -316,6 +316,12 @@ generateEfi(){
             "OsxAptioFix2Drv.efi" | "AptioFix2")
                 guid=ED5C3A97-D211-6FBA-B9F1-0780047A6F7B
             ;;
+            "OpenCore.efi")
+                guid=9E1F2D62-016E-4CE7-BF5B-6A47286AE984
+            ;;
+            "BOOTx64.efi")
+                guid=1E55CC26-6036-43AB-867C-213FFB426812
+            ;;
             *)
                 guid=$("$binDir/GenGuid" -n $(basename $a .efi))
             ;;
