@@ -4,7 +4,7 @@
 #     Based on kext2ffs by FredWsta and STLVNUB
 #
 # Inspired by:
-#    https://www.insanelymac.com/forum/topic/291655-ozmosis/
+#     https://www.insanelymac.com/forum/topic/291655-ozmosis/
 #     https://github.com/tuxuser/kext2ffs
 #     https://github.com/cecekpawon/OSXOLVED/blob/master/yod-KextToFfs.sh
 #     https://github.com/cecekpawon/ToFfs
@@ -12,13 +12,13 @@
 # ———————————————————————————————————————————————————————————————————————————————
 #
 # Install:
-#     Place KextToFfs into a separate directory.
+#    Place KextToFfs into a separate directory.
 #    Make the script executable - Terminal: chmod +x ./KextToFfs.command
 #    DoubleClick KextToFfs to execute.
 #    At the first run, KextToFfs will download the required binary files,
 #    and create the subdirectories, where you can place your kext's.
 #    If you want all files in one place, create a directory 'Files' beside
-#   KextToFfs. Now copy all your files inside this directory.
+#    KextToFfs. Now copy all your files inside this directory.
 #
 #    Some firmware modules like Ozmosis, require a 'DXE dependency section' for
 #    proper execution. You can extract this section from any XMAS firmware.
@@ -43,7 +43,7 @@
 #
 # ———————————————————————————————————————————————————————————————————————————————
 #
-# Configuration
+# Configuration:
 #
 
 # Add version string to kext (comment to disable)
@@ -156,7 +156,7 @@ kext2ffs() {
 
     c=${version}Compress
 
-    if     [ -f "$workDir/$t.plist" ]; then
+    if [ -f "$workDir/$t.plist" ]; then
         cat "$workDir/$t.plist" NullTerminator "$kextDir/$1/Contents/MacOS/$b" > "$b.bin" 2>/dev/null
         rm "$workDir/$t.plist"
     else
